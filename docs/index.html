@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morse</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+    }
+
+    main {
+      width: min(100%, 640px);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.5rem, 12vw, 5rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    p {
+      max-width: 56ch;
+      margin: 0 0 18px;
+      font-size: 1.1rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid currentColor;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Morse</h1>
+    <p>A minimal iPhone app for touch-controlled light.</p>
+    <p>Touch and hold the screen to turn it white and enable the rear torch. Release to return to black.</p>
+    <div class="links" aria-label="Project links">
+      <a class="button" href="privacy-policy.html">Privacy Policy</a>
+      <a class="button" href="https://github.com/bahdahshin/morse">Source on GitHub</a>
+    </div>
+  </main>
+</body>
+</html>
